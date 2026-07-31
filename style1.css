@@ -7,45 +7,105 @@
     
 }
 
-nav{
-    display:flex;
+.banner{
+    background: #fef7dc;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1px 3px;
-    background-color: #f41e1e;
+    padding: 12px 40px;
 }
 
+.banner p{
+    margin: 0;
+    font-size: 18px;
+}
+
+.banner button{
+    background: #d84b4b;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner button:hover{
+    background: #b83232;
+}
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f41e1e;
+    padding: 8px 35px;
+    height: 70px;
+}
+
+/* Logo Section */
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.logo h1{
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+/* Menu */
 nav ul{
     display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
+    align-items: center;
     list-style: none;
+    gap: 25px;
     margin: 0;
     padding: 0;
 }
 
-nav a:hover{
-    color: #ff6347;
-    transition: 0.3s;
-}
-
+/* Menu Links */
 nav ul li a{
     color: white;
     text-decoration: none;
+    font-size: 20px;
     font-weight: 500;
-    font-size: 25px;
-    padding: 4px 8px;
+    padding: 8px 10px;
+    transition: 0.3s;
 }
 
-nav li: last-child a{
-    background-color: grey;
-    padding: 2px 8px;
-    border-radius: 4px;
+/* Icons */
+nav ul li a i{
+    margin-right: 6px;
+    font-size: 18px;
 }
 
-nav li: last-child a:hover{
-    background-color: grey;
-    color: grey;
+/* Hover Effect */
+nav ul li a:hover{
+    color: #ffd6d6;
+}
+
+/* Login Button */
+nav ul li:last-child a{
+    background: white;
+    color: #f41e1e;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+nav ul li:last-child a:hover{
+    background: #ececec;
+    color: #f41e1e;
 }
 /* header{
     margin: 5%;
@@ -62,28 +122,20 @@ nav li: last-child a:hover{
 
 } */
 
-.Banner{
-    border: 1cm
-    margin: auto;
-    padding: 4px;
-    background-color: beige;
-    font-size: 15;
-}
-
 /* ================= HERO SECTION ================= */
 
 .hero{
     width:100%;
     height:500px;
-    background:url("img/travel-bg.jpg") center center/cover no-repeat;
+    background:url("Media/Images/HeroUrl.png") center center/cover no-repeat;
     position:relative;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:self-end;
 }
 
 .hero::before{
-    content:"";
+    content:normal;
     position:absolute;
     inset:0;
     background:rgba(0,0,0,0.45);
@@ -96,28 +148,20 @@ nav li: last-child a:hover{
     text-align:center;
 }
 
-.hero-overlay h1{
-    color:#fff;
-    font-size:52px;
-    margin-bottom:15px;
-}
-
-.hero-overlay p{
-    color:#f2f2f2;
-    font-size:22px;
-    margin-bottom:50px;
-}
 
 /* ================= SEARCH BOX ================= */
 
 .search-box{
+    display: flex;
+    flex-direction: row;
+    position: relative;
     width:100%;
     background:#fff;
     border-radius:20px;
     padding:20px;
     display:flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content:baseline;
+    align-items:flex-end;
     gap:15px;
     box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
@@ -125,7 +169,7 @@ nav li: last-child a:hover{
 .input-box{
     flex:1;
     display:flex;
-    align-items:center;
+    align-items:flex-end;
     border-right:1px solid #ddd;
     padding:15px;
 }
@@ -148,6 +192,7 @@ nav li: last-child a:hover{
 }
 
 .search-btn{
+    
     width:200px;
     padding:18px;
     border:none;
@@ -169,7 +214,7 @@ nav li: last-child a:hover{
 @media(max-width:900px){
 
 .search-box{
-    flex-direction:column;
+    flex-direction:row;
 }
 
 .input-box{
@@ -182,12 +227,264 @@ nav li: last-child a:hover{
     width:100%;
 }
 
-.hero-overlay h1{
-    font-size:36px;
-}
 
 .hero{
     height:650px;
+}
+
+}
+
+.Offersforyou{
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    background-color:white;
+    color: rgb(14, 13, 13);
+}
+.btn{
+    size: 30px;
+    padding: 5px;
+    align-items: flex-end;
+    font-size: 20px;
+    background-color: #f41e1e;
+    color: white;
+    cursor: pointer;
+    font-weight:bold;
+    border: radius 100 px;
+}
+/* ==========================
+        OFFERS SECTION
+==========================*/
+
+.offers-section{
+
+    width:90%;
+    margin:40px auto;
+}
+
+.offer-categories{
+
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+
+}
+
+.offer-categories button{
+
+    padding:10px 22px;
+    border:1px solid #ccc;
+    background:white;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+.offer-categories .active{
+
+    background:#ffdede;
+    border:none;
+    color:#d32f2f;
+    font-weight:bold;
+
+}
+
+.offer-categories button:hover{
+
+    background:#ffe6e6;
+
+}
+
+
+/* Cards */
+
+.offer-cards{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+
+}
+
+.offer-card{
+
+    background:linear-gradient(135deg,#ffe7e7,#fff3f3);
+    padding:20px;
+    border-radius:18px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.tag{
+
+    background:#444;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:13px;
+
+}
+
+.offer-card h3{
+
+    margin:18px 0 10px;
+    font-size:24px;
+
+}
+
+.offer-card p{
+
+    color:#555;
+    margin-bottom:25px;
+
+}
+
+.offer-bottom{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.coupon{
+
+    background:white;
+    padding:8px 16px;
+    border-radius:30px;
+    font-weight:bold;
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+
+}
+
+.offer-bottom img{
+
+    width:120px;
+
+}
+
+
+
+/* ==========================
+       WHATS NEW
+==========================*/
+
+.whats-new{
+
+    width:90%;
+    margin:50px auto;
+
+}
+
+.whats-new h2{
+
+    font-size:35px;
+    margin-bottom:25px;
+
+}
+
+.news-container{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+
+}
+
+.news-card{
+
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    min-height:180px;
+    transition:.3s;
+
+}
+
+.news-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.news-card h3{
+
+    font-size:28px;
+    margin-bottom:15px;
+
+}
+
+.news-card p{
+
+    color:#555;
+    line-height:1.6;
+
+}
+
+.news-card a{
+
+    display:inline-block;
+    margin-top:20px;
+    text-decoration:none;
+    color:#d32f2f;
+    font-weight:bold;
+
+}
+
+.maroon{
+
+    background:#780038;
+    color:white;
+
+}
+
+.maroon p,
+.maroon a{
+
+    color:white;
+
+}
+
+.blue{
+
+    background:#e7f2ff;
+
+}
+
+
+/* ==========================
+       RESPONSIVE
+==========================*/
+
+@media(max-width:1000px){
+
+.offer-cards,
+.news-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:700px){
+
+.offer-cards,
+.news-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.offer-categories{
+
+    flex-wrap:wrap;
+
 }
 
 }
