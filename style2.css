@@ -40,7 +40,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f41e1e;
+    background: #46080849;
     padding: 8px 35px;
     height: 70px;
 }
@@ -164,7 +164,7 @@ nav ul li:last-child a:hover{
 }
 
 .input-box i{
-    color:#d32f2f;
+    color:#b34b4b44;
     font-size:22px;
     margin-right:10px;
 }
@@ -192,4 +192,33 @@ nav ul li:last-child a:hover{
 
 .search-btn:hover{
     background:#b71c1c;
+}
+
+.card {
+    max-width: 300px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.card-text {
+    text-align: justify;
+    line-height: 1.5;
 }
