@@ -222,3 +222,30 @@ nav ul li:last-child a:hover{
     text-align: justify;
     line-height: 1.5;
 }
+
+.reloc {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+     max-width: 300px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.des2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.des3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
